@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require("fs").promises;
 
 async function readData() {
   const data = await fs.readFile("events.json", "utf8");
